@@ -1,14 +1,14 @@
 package com.algorithm;
 
 /*
- * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï³Éºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ï³Éºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ãµ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ÊäÈëÁ½¸öµ¥µ÷µİÔöµÄÁ´±í£¬Êä³öÁ½¸öÁ´±íºÏ³ÉºóµÄÁ´±í£¬µ±È»ÎÒÃÇĞèÒªºÏ³ÉºóµÄÁ´±íÂú×ãµ¥µ÷²»¼õ¹æÔò
  * 
  * lsit1: node->node->node->node->null;
  * list2: node->node->node->node->null;
- * 1 ï¿½ï¿½ï¿½ï¿½list1 list2 ï¿½ï¿½Î´ï¿½ï¿½ï¿½ò²¿·Öµï¿½ï¿½ï¿½ï¿½ï¿½Í·Ö¸ï¿½ë£¬ï¿½è¶¨headBig headLittleï¿½ï¿½Ê¹headBig.val >= headLittle.val 
- * 2 headLittleï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½headBigï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ tempNode
- * 3 ï¿½ï¿½tempNodeï¿½ï¿½Ç°Ò»ï¿½ï¿½ï¿½ï¿½Nodeï¿½ï¿½nextÖ¸ï¿½ï¿½headBig,È»ï¿½ï¿½
- * 4 headLittle = headBig, headBig = tempNodeï¿½ï¿½ï¿½Ø¸ï¿½1ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ïµ½ï¿½ï¿½Í·
+ * 1 ¶ÔÓÚlist1 list2 ÖĞÎ´ÅÅĞò²¿·ÖµÄÁ½¸öÍ·Ö¸Õë£¬Éè¶¨headBig headLittle£¬Ê¹headBig.val >= headLittle.val 
+ * 2 headLittle²»¶Ïµü´úÇ°½ø£¬ÕÒµ½´óÓÚheadBigµÄÒıÓÃ tempNode
+ * 3 ½«tempNodeµÄÇ°Ò»ÒıÓÃNodeµÄnextÖ¸ÏòheadBig,È»ºó
+ * 4 headLittle = headBig, headBig = tempNode£¬ÖØ¸´1²½ÖèÖ±µ½ÓĞÒ»¸öÁ´±í´ïµ½¾¡Í·
  */
 public class Merge
 {

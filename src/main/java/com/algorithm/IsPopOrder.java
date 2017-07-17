@@ -2,16 +2,16 @@ package com.algorithm;
 
 import java.util.Stack;
 
-/*���������������У���һ�����б�ʾջ��ѹ��˳�����жϵڶ��������Ƿ�Ϊ��ջ�ĵ���˳��
- * ����ѹ��ջ���������־�����ȡ���������1,2,3,4,5��ĳջ��ѹ��˳��
- * ����4��5,3,2,1�Ǹ�ѹջ���ж�Ӧ��һ���������У���4,3,5,1,2�Ͳ������Ǹ�ѹջ���еĵ������С�
- * ��ע�⣺���������еĳ�������ȵģ�
- * ����ָ�� push����point��pop����pointB
- * 1 stack push ֱ��ջ������pointBָ�������
- * 2 stack pop Ȼ���ظ� 1
- * push��һ����ҪpointA++ popһ����ҪpointB++
- * ��pointA��������ָ��Χ�� ջ�����飡= pointBָ������ݣ�����false
- * pointB��������ָ��Χ�����Ѿ�������У�����true
+/*输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。
+ * 假设压入栈的所有数字均不相等。例如序列1,2,3,4,5是某栈的压入顺序，
+ * 序列4，5,3,2,1是该压栈序列对应的一个弹出序列，但4,3,5,1,2就不可能是该压栈序列的弹出序列。
+ * （注意：这两个序列的长度是相等的）
+ * 设置指针 push数组point，pop数组pointB
+ * 1 stack push 直到栈顶遇到pointB指向的数据
+ * 2 stack pop 然后重复 1
+ * push完一次需要pointA++ pop一次需要pointB++
+ * 当pointA超出数组指向范围且 栈顶数组！= pointB指向的数据，返回false
+ * pointB超出数组指向范围，则已经完成序列，返回true
  */
 public class IsPopOrder
 {
@@ -48,11 +48,11 @@ public class IsPopOrder
 	{
 		// TODO Auto-generated method stub
 		int[] a =
-		{ 1 };
+				{ 1 };
 		int[] b =
-		{ 4 };
+				{ 4 };
 		int[] c =
-		{ 4, 3, 5, 1, 2 };
+				{ 4, 3, 5, 1, 2 };
 		System.out.println(IsPopOrder1(a, b));
 		System.out.println(IsPopOrder1(a, c));
 

@@ -1,11 +1,13 @@
 package com.algorithm;
+import java.util.Arrays;
+import java.util.Comparator;
 
 /*
- * ����һ�����������飬����������������ƴ�������ų�һ��������ӡ��ƴ�ӳ���������������С��һ����
- * ������������{3��32��321}�����ӡ���������������ųɵ���С����Ϊ321323
- * 
- * дһ�������comparator��Ȼ������������������������鼴Ϊ������
- * �Ƚ���������ת����string
+ * 输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
+ * 例如输入数组{3，32，321}，则打印出这三个数字能排成的最小数字为321323
+ *
+ * 写一个特殊的comparator，然后对数组进行排序，依次输出数组即为所求结果
+ * 先将两个数组转换成string
  * compare(String a, String b)
  * {
  *    return  1  ab>ba;
@@ -13,8 +15,6 @@ package com.algorithm;
  *            0  ab=ba;
  * }
  */
-import java.util.Arrays;
-import java.util.Comparator;
 
 class comp implements Comparator<String>
 {
@@ -64,7 +64,7 @@ public class PrintMinNumber
 	{
 		// TODO Auto-generated method stub
 		int[] arrays =
-		{ 3334, 3, 3333332 };
+				{ 3334, 3, 3333332 };
 		int a = new comp().compare("3334", "3");
 		System.out.println(new PrintMinNumber().solution(arrays));
 

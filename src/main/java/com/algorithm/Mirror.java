@@ -1,16 +1,17 @@
 package com.algorithm;
 
+
 import java.util.LinkedList;
 
 /*
- * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä»»ÎªÔ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
- * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½ï¿½å£ºÔ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+ * ²Ù×÷¸ø¶¨µÄ¶þ²æÊ÷£¬½«Æä±ä»»ÎªÔ´¶þ²æÊ÷µÄ¾µÏñ¡£
+ * ¶þ²æÊ÷µÄ¾µÏñ¶¨Òå£ºÔ´¶þ²æÊ÷ 
     	    8
     	   /  \
     	  6   10
     	 / \  / \
     	5  7 9 11
-    	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    	¾µÏñ¶þ²æÊ÷
     	    8
     	   /  \
     	  10   6
@@ -18,10 +19,10 @@ import java.util.LinkedList;
     	11 9 7  5
  */
 /*
- * ï¿½ï¿½ï¿½ÃµÝ¹ï¿½Ô­ï¿½ò£¬½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å®
- * ï¿½ÇµÝ¹ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½
- * 1 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½È»ï¿½ó½»»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å®
- * 2 È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½Ø¸ï¿½ 1 ï¿½ï¿½ï¿½ï¿½
+ * ÀûÓÃµÝ¹éÔ­Ôò£¬½»»»×óÓÒ×ÓÅ®
+ * ·ÇµÝ¹éËã·¨£¬ÔËÓÃ¶ÓÁÐ
+ * 1 ×óÓÒ×ÓÅ®¼ÓÈë¶ÓÁÐ£¬È»ºó½»»»×óÓÒ×ÓÅ®
+ * 2 È¡³ö¶ÓÁÐÔªËØ£¬ÖØ¸´ 1 ²½Öè
  */
 public class Mirror
 {
@@ -92,18 +93,18 @@ public class Mirror
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		problem.TreeNode treeNode = new problem.TreeNode(8);
-		treeNode.left = new problem.TreeNode(8);
-		treeNode.right = new problem.TreeNode(7);
-		treeNode.left.left = new problem.TreeNode(9);
-		treeNode.left.right = new problem.TreeNode(2);
+		TreeNode treeNode = new TreeNode(8);
+		treeNode.left = new TreeNode(8);
+		treeNode.right = new TreeNode(7);
+		treeNode.left.left = new TreeNode(9);
+		treeNode.left.right = new TreeNode(2);
 
-		treeNode.left.right.right = new problem.TreeNode(7);
-		treeNode.left.right.left = new problem.TreeNode(4);
+		treeNode.left.right.right = new TreeNode(7);
+		treeNode.left.right.left = new TreeNode(4);
 
-		problem.TreeNode root2 = new problem.TreeNode(8);
-		root2.left = new problem.TreeNode(9);
-		root2.right = new problem.TreeNode(2);
+		TreeNode root2 = new TreeNode(8);
+		root2.left = new TreeNode(9);
+		root2.right = new TreeNode(2);
 		Mirror mirror = new Mirror();
 		mirror.Mirror1(treeNode);
 		print(treeNode);

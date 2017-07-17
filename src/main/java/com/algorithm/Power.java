@@ -1,10 +1,10 @@
 package com.algorithm;
 
 /*
- * ����һ��double���͵ĸ�����base��int���͵�����exponent����base��exponent�η�
+ * 给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方
  */
 /*
- * ��Ҫ���� base = 0 || exponent <= 0 �������ͬʱdouble�Ƚϵľ������⣬������λ�������/2
+ * 需要考虑 base = 0 || exponent <= 0 的情况，同时double比较的精度问题，还有用位运算代替/2
  * 
  */
 public class Power

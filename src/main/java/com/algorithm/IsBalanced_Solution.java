@@ -1,10 +1,12 @@
 package com.algorithm;
 
+
+
 /**
  * Created by jieping.hjp on 2017/7/12.
  */
 public class IsBalanced_Solution {
-    public boolean IsBalanced_Solution1(com.algorithm.TreeNode root) {
+    public boolean IsBalanced_Solution1(TreeNode root) {
         if(root==null){
             return true;
         }

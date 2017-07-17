@@ -1,13 +1,14 @@
 package com.algorithm;
 
+
 /*
- * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ÂµÄ½ï¿½ã£¬Ö»ï¿½Üµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
+ * ÊäÈëÒ»¿Ã¶þ²æËÑË÷Ê÷£¬½«¸Ã¶þ²æËÑË÷Ê÷×ª»»³ÉÒ»¸öÅÅÐòµÄË«ÏòÁ´±í¡£ÒªÇó²»ÄÜ´´½¨ÈÎºÎÐÂµÄ½áµã£¬Ö»ÄÜµ÷ÕûÊ÷ÖÐ½áµãÖ¸ÕëµÄÖ¸Ïò
  * 
- * ï¿½Ý¹é£ºï¿½èº¯ï¿½ï¿½TreeNode Convert2(TreeNode pRootOfTree, boolean direction),ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½pRootOfTreeï¿½ï¿½ï¿½ï¿½ÎªË«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
- * ï¿½ï¿½ï¿½ï¿½ direction = true ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½direction = false ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î²
+ * µÝ¹é£ºÉèº¯ÊýTreeNode Convert2(TreeNode pRootOfTree, boolean direction),¸Ãº¯ÊýÈÃpRootOfTreeÊ÷±äÎªË«ÏòÁ´±í
+ * ²¢ÇÒ direction = true ·µ»ØÁ´±íÍ·£¬direction = false ·µ»ØÁ´±íÎ²
  *  1 Convert2(pRootOfTree.left,false)
  *  2 Convert2(pRootOfTree.right,true)
- *  3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *  3 ½«´¦ÀíºÃµÄ×óÓÒ×ÓÊ÷µÄÁ´±íÆ´½ÓÆðÀ´
  * 
  */
 public class Convert
@@ -74,12 +75,12 @@ public class Convert
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		problem.TreeNode treeNode = new problem.TreeNode(5);
-		treeNode.left = new problem.TreeNode(3);
-		treeNode.right = new problem.TreeNode(6);
-		treeNode.left.left = new problem.TreeNode(2);
-		treeNode.left.right = new problem.TreeNode(4);
-		treeNode.right.right = new problem.TreeNode(7);
+		TreeNode treeNode = new TreeNode(5);
+		treeNode.left = new TreeNode(3);
+		treeNode.right = new TreeNode(6);
+		treeNode.left.left = new TreeNode(2);
+		treeNode.left.right = new TreeNode(4);
+		treeNode.right.right = new TreeNode(7);
 
 	}
 

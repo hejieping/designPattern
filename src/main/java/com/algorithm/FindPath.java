@@ -1,10 +1,11 @@
 package com.algorithm;
 
 /*
- * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Å¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð½ï¿½ï¿½Öµï¿½Äºï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
- * Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ã¿ªÊ¼ï¿½ï¿½ï¿½ï¿½Ò»Ö±ï¿½ï¿½Ò¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½Î³ï¿½Ò»ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
- * ï¿½Ý¹ï¿½
+ * ÊäÈëÒ»¿Å¶þ²æÊ÷ºÍÒ»¸öÕûÊý£¬´òÓ¡³ö¶þ²æÊ÷ÖÐ½áµãÖµµÄºÍÎªÊäÈëÕûÊýµÄËùÓÐÂ·¾¶¡£
+ * Â·¾¶¶¨ÒåÎª´ÓÊ÷µÄ¸ù½áµã¿ªÊ¼ÍùÏÂÒ»Ö±µ½Ò¶½áµãËù¾­¹ýµÄ½áµãÐÎ³ÉÒ»ÌõÂ·¾¶¡£
+ * µÝ¹é
  */
+
 import java.util.ArrayList;
 
 public class FindPath
@@ -61,11 +62,11 @@ public class FindPath
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		problem.TreeNode treeNode = new problem.TreeNode(10);
-		treeNode.left = new problem.TreeNode(5);
-		treeNode.right = new problem.TreeNode(12);
-		treeNode.left.left = new problem.TreeNode(4);
-		treeNode.left.right = new problem.TreeNode(7);
+		TreeNode treeNode = new TreeNode(10);
+		treeNode.left = new TreeNode(5);
+		treeNode.right = new TreeNode(12);
+		treeNode.left.left = new TreeNode(4);
+		treeNode.left.right = new TreeNode(7);
 		new FindPath().FindPath1(treeNode, 15);
 
 	}

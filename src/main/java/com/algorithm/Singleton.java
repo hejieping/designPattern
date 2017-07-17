@@ -1,12 +1,12 @@
-package com.algorithm;
+package problem;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /*
- * ���һ���ֻ࣬�����ɸ����һ��ʵ��
+ * 设计一个类，只能生成该类的一个实例
  */
-//ֻ�����ڵ��߳�
+//只适用于单线程
 class Singleton1
 {
 	private Singleton1()
@@ -25,7 +25,7 @@ class Singleton1
 	}
 }
 
-// ���ö��̣߳�����ÿ�η��ʶ���Ҫ�������������ǳ���ʱ
+// 适用多线程，但是每次访问都需要加锁，而加锁非常耗时
 class Singleton2
 {
 	private Singleton2()
@@ -54,7 +54,7 @@ class Singleton2
 
 }
 
-// ��ȷ��������ʵ�ָ��ӣ����׳���
+// 正确，但代码实现复杂，容易出错
 class Singleton3
 {
 	private Singleton3()
@@ -85,7 +85,7 @@ class Singleton3
 
 }
 
-// ���þ�̬���캯������࣬��instance������Ѿ�����ʵ�����Ӷ������ڴ�ʹ����
+// 利用静态构造函数，简洁，但instance过早就已经创建实例，从而降低内存使用率
 class Singleton4
 {
 	private Singleton4()
@@ -100,7 +100,7 @@ class Singleton4
 	}
 }
 
-// ��ȷ��ֻ��Instanced����ʱ�Ŵ���ʵ��
+// 正确，只有Instanced调用时才创建实例
 class Singleton5
 {
 	private Singleton5()

@@ -1,18 +1,18 @@
 package com.algorithm;
 
 /*
- * ï¿½ï¿½Oï¿½ï¿½lï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ò»ï¿½ï¿½ï¿½Úµï¿½
- * ï¿½ï¿½ï¿½Ç½ï¿½toBeDeleted.nextï¿½ï¿½Öµï¿½ï¿½ï¿½Æµï¿½toBeDeleted È»ï¿½ï¿½É¾ï¿½ï¿½toBeDeleted.next
+ * ÔÚO£¨l£©Ê±¼äÄÚÉ¾³ýÁ´±íÖÐµÄÒ»¸ö½Úµã
+ * ¿¼ÂÇ½«toBeDeleted.nextµÄÖµ¸´ÖÆµ½toBeDeleted È»ºóÉ¾³ýtoBeDeleted.next
  */
 public class deleteList
 {
 	public void deleteNode(ListNode head, ListNode toBeDeleted)
 	{
-		if (head == toBeDeleted)// É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½
+		if (head == toBeDeleted)// É¾³ý¶ÔÏóÊÇÍ·²¿
 		{
 			head = null;
 		}
-		if (toBeDeleted.next == null) // É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½
+		if (toBeDeleted.next == null) // É¾³ý¶ÔÏóÊÇÎ²²¿
 		{
 			ListNode tempNode = head;
 			while (tempNode.next != toBeDeleted)

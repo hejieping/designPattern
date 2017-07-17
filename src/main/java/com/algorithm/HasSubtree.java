@@ -1,16 +1,16 @@
 package com.algorithm;
 
 /*
- * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½Bï¿½ï¿½ï¿½Ð¶ï¿½Bï¿½Ç²ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½Ó½á¹¹ï¿½ï¿½ï¿½ï¿½psï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó½á¹¹ï¿½ï¿½
- * ï¿½Ý¹é·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½nullï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ÊäÈëÁ½¿Ã¶þ²æÊ÷A£¬B£¬ÅÐ¶ÏBÊÇ²»ÊÇAµÄ×Ó½á¹¹¡££¨ps£ºÎÒÃÇÔ¼¶¨¿ÕÊ÷²»ÊÇÈÎÒâÒ»¸öÊ÷µÄ×Ó½á¹¹£©
+ * µÝ¹é·½·¨½â¾ö£¬×¢ÒânullÎÊÌâ£¬»¹ÓÐÊÇ×Ó½á¹¹²»ÊÇ×ÓÊ÷
  *     8             8
  *   9   2         9   2     true
  * 9  7 6  8     #  # #  # 
  */
 public class HasSubtree
 {
-	public static boolean HasSubtree1(problem.TreeNode root1,
-			problem.TreeNode root2)
+	public static boolean HasSubtree1(TreeNode root1,
+			TreeNode root2)
 	{
 		if (root2 == null || root1 == null)
 		{
@@ -28,8 +28,8 @@ public class HasSubtree
 
 	}
 
-	public static boolean isSameTree(problem.TreeNode root1,
-			problem.TreeNode root2)
+	public static boolean isSameTree(TreeNode root1,
+			TreeNode root2)
 	{
 		if (root2 == null)
 		{
@@ -47,18 +47,18 @@ public class HasSubtree
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		problem.TreeNode treeNode = new problem.TreeNode(8);
-		treeNode.left = new problem.TreeNode(8);
-		treeNode.right = new problem.TreeNode(7);
-		treeNode.left.left = new problem.TreeNode(9);
-		treeNode.left.right = new problem.TreeNode(2);
+		TreeNode treeNode = new TreeNode(8);
+		treeNode.left = new TreeNode(8);
+		treeNode.right = new TreeNode(7);
+		treeNode.left.left = new TreeNode(9);
+		treeNode.left.right = new TreeNode(2);
 
-		treeNode.left.right.right = new problem.TreeNode(7);
-		treeNode.left.right.left = new problem.TreeNode(4);
+		treeNode.left.right.right = new TreeNode(7);
+		treeNode.left.right.left = new TreeNode(4);
 
-		problem.TreeNode root2 = new problem.TreeNode(8);
-		root2.left = new problem.TreeNode(9);
-		root2.right = new problem.TreeNode(2);
+		TreeNode root2 = new TreeNode(8);
+		root2.left = new TreeNode(9);
+		root2.right = new TreeNode(2);
 		System.out.println(HasSubtree1(treeNode, root2));
 	}
 
