@@ -1,7 +1,7 @@
 package com.algorithm;
 
 /*
- * ��һ����λ�����У������ң����ϵ��µ�����дһ�����Һ������жϸ������Ƿ����һ������
+ * 在一个二位数组中，从左到右，从上到下递增，写一个查找函数，判断该数组是否存在一个整数
  */
 public class searchInArray
 {
@@ -15,7 +15,7 @@ public class searchInArray
 
 	}
 
-	// ���Ӷ�O(array.row + array.column)
+	// 复杂度O(array.row + array.column)
 	public boolean find(int target, int[][] array)
 	{
 		if (array == null)
@@ -40,9 +40,9 @@ public class searchInArray
 		return false;
 	}
 
-	// ���Ӷ�logn ����ȷ������Ϊ��������̫С
+	// 复杂度logn ，待确定，因为测试数据太小
 	public boolean find(int target, int[][] array, int row, int column,
-			boolean direction)
+						boolean direction)
 	{
 		int head;
 		int tail;
@@ -107,9 +107,9 @@ public class searchInArray
 	{
 		searchInArray s = new searchInArray();
 		int[][] a =
-		{
-				{ 1, 2, 8, 10 },
-				{ 2, 7, 9, 19 } };
+				{
+						{ 1, 2, 8, 10 },
+						{ 2, 7, 9, 19 } };
 		System.out.println(s.find(20, a));
 	}
 }

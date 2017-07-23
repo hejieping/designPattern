@@ -1,10 +1,10 @@
 package com.algorithm;
 
 /*
- * ����ջ�����ݽṹ�����ڸ�������ʵ��һ���ܹ��õ�ջ��СԪ�ص�min���� ��min,pop,pushʱ�临�Ӷȶ�ΪO(l)
- * ��������һ������stack�������¼min�仯���̣�
- * 1 push ʱ�����pushֵ��С��min����min��Ϊpush ֵ ��    ����stack push min
- * 2 pop stack pop ����stack pop ,Ȼ��min = ����stack.peak()
+ * 定义栈的数据结构，请在该类型中实现一个能够得到栈最小元素的min函数 ，min,pop,push时间复杂度都为O(l)
+ * 可以申请一个辅助stack，里面记录min变化过程，
+ * 1 push 时，检查push值，小于min，则min变为push 值 ，    辅助stack push min
+ * 2 pop stack pop 辅助stack pop ,然后min = 辅助stack.peak()
  */
 import java.util.Stack;
 

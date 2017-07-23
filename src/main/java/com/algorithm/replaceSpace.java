@@ -1,8 +1,8 @@
 package com.algorithm;
 
 /*
- * �� str����Ŀո��滻��%20
- * ���� "we are happy" �ĳ� "we%20are%20happy"
+ * 将 str里面的空格替换成%20
+ * 例如 "we are happy" 改成 "we%20are%20happy"
  */
 public class replaceSpace
 {

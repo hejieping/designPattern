@@ -1,9 +1,10 @@
 package com.algorithm;
 
-/*
- * ������stackʵ��quene
- */
 import java.util.Stack;
+
+/*
+ * 用两个stack实现quene
+ */
 
 class Solution
 {

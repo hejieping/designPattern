@@ -1,12 +1,10 @@
 package com.anotation;
 
-import java.util.HashMap;
-
 /**
  * Created by jieping.hjp on 2017/7/22.
  */
 public class Apple {
-    HashMap
+
 
     @FruitName("Apple")
     private String appleName;

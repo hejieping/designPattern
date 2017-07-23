@@ -1,7 +1,7 @@
 package com.algorithm;
 
 /*
- * ��listnode���������arraylist��
+ * 将listnode逆序输出到arraylist中
  */
 import java.util.ArrayList;
 import java.util.Stack;
