@@ -74,12 +74,12 @@ public class Convert
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		problem.TreeNode treeNode = new problem.TreeNode(5);
-		treeNode.left = new problem.TreeNode(3);
-		treeNode.right = new problem.TreeNode(6);
-		treeNode.left.left = new problem.TreeNode(2);
-		treeNode.left.right = new problem.TreeNode(4);
-		treeNode.right.right = new problem.TreeNode(7);
+		TreeNode treeNode = new TreeNode(5);
+		treeNode.left = new TreeNode(3);
+		treeNode.right = new TreeNode(6);
+		treeNode.left.left = new TreeNode(2);
+		treeNode.left.right = new TreeNode(4);
+		treeNode.right.right = new TreeNode(7);
 
 	}
 

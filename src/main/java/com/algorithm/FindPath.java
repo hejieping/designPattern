@@ -61,11 +61,11 @@ public class FindPath
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		problem.TreeNode treeNode = new problem.TreeNode(10);
-		treeNode.left = new problem.TreeNode(5);
-		treeNode.right = new problem.TreeNode(12);
-		treeNode.left.left = new problem.TreeNode(4);
-		treeNode.left.right = new problem.TreeNode(7);
+		TreeNode treeNode = new TreeNode(10);
+		treeNode.left = new TreeNode(5);
+		treeNode.right = new TreeNode(12);
+		treeNode.left.left = new TreeNode(4);
+		treeNode.left.right = new TreeNode(7);
 		new FindPath().FindPath1(treeNode, 15);
 
 	}

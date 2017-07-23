@@ -92,18 +92,18 @@ public class Mirror
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		problem.TreeNode treeNode = new problem.TreeNode(8);
-		treeNode.left = new problem.TreeNode(8);
-		treeNode.right = new problem.TreeNode(7);
-		treeNode.left.left = new problem.TreeNode(9);
-		treeNode.left.right = new problem.TreeNode(2);
+		TreeNode treeNode = new TreeNode(8);
+		treeNode.left = new TreeNode(8);
+		treeNode.right = new TreeNode(7);
+		treeNode.left.left = new TreeNode(9);
+		treeNode.left.right = new TreeNode(2);
 
-		treeNode.left.right.right = new problem.TreeNode(7);
-		treeNode.left.right.left = new problem.TreeNode(4);
+		treeNode.left.right.right = new TreeNode(7);
+		treeNode.left.right.left = new TreeNode(4);
 
-		problem.TreeNode root2 = new problem.TreeNode(8);
-		root2.left = new problem.TreeNode(9);
-		root2.right = new problem.TreeNode(2);
+		TreeNode root2 = new TreeNode(8);
+		root2.left = new TreeNode(9);
+		root2.right = new TreeNode(2);
 		Mirror mirror = new Mirror();
 		mirror.Mirror1(treeNode);
 		print(treeNode);
