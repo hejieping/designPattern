@@ -1,5 +1,9 @@
 package com.algorithm;
 
+import java.text.ParseException;
+
+import org.apache.commons.lang.time.DateFormatUtils;
+
 class findFirstCommonNode
 {
     public ListNode findFirstCommonNode(ListNode node1, ListNode node2)
@@ -39,10 +43,8 @@ class findFirstCommonNode
         return node1;
     }
 
-    public static void main(String[] args)
-    {
-        // TODO Auto-generated method stub
-
+    public static void main(String[] args) throws ParseException {
+        DateFormatUtils.ISO_DATE_FORMAT.parseObject("2015-12-01");
     }
 
 }

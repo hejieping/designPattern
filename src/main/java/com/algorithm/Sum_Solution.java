@@ -10,5 +10,6 @@ public class Sum_Solution {
         result = result >> 1;
         return result;
     }
-
+    public static void main(String[] args){
+    }
 }
