@@ -1,5 +1,6 @@
 package com.finalProject.framework.television.decorator.impl;
 
+import com.finalProject.applications.OutputsUtil;
 import com.finalProject.framework.television.decorator.Decorator;
 
 /**
@@ -12,6 +13,5 @@ public class GameDecorator extends Decorator {
     @Override
     public void features(){
         super.features();
-        System.out.print(feature + " ");
-    }
+        System.out.println(OutputsUtil.getOutput(this,"gameDecorator","television feature","game feature"));    }
 }

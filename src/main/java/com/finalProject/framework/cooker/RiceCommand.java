@@ -12,5 +12,6 @@ public class RiceCommand extends Command   {
     @Override
     public void executeCommand() {
         super.getCooker().cookRice();
+        super.getCooker().notifys();
     }
 }

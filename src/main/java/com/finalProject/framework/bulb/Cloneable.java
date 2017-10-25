@@ -6,5 +6,5 @@ package com.finalProject.framework.bulb;
  * @since 2017/10/18 下午8:23
  */
 public interface Cloneable {
-    public Bulb clone();
+    public Object clone();
 }

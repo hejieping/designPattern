@@ -2,7 +2,7 @@ package com.finalProject.framework.telephone;
 
 import com.finalProject.framework.airCondition.AirConditionProxy;
 import com.finalProject.framework.bulb.BulbProxy;
-import com.finalProject.framework.cooker.CookerProxy;
+import com.finalProject.framework.cooker.CookerInvoker;
 import com.finalProject.framework.cooker.Observer;
 import com.finalProject.framework.television.TelevisionProxy;
 import com.finalProject.framework.washingMachine.WashingMachineProxy;
@@ -13,14 +13,15 @@ import com.finalProject.framework.washingMachine.WashingMachineProxy;
  * @since 2017/10/18 下午9:08
  */
 public class SmartAppliancesAppFacade implements Observer {
+
+    private CookerInvoker cookerInvoker = new CookerInvoker();
     /**
      * 各个家电的代理类
      */
-    private AirConditionProxy airConditionProxy;
-    private BulbProxy bulbProxy;
-    private CookerProxy cookerProxy;
-    private TelevisionProxy televisionProxy;
-    private WashingMachineProxy washingMachineProxy;
+    private AirConditionProxy airConditionProxy = new AirConditionProxy();
+    private BulbProxy bulbProxy = new BulbProxy();
+    private TelevisionProxy televisionProxy = new TelevisionProxy();
+    private WashingMachineProxy washingMachineProxy = new WashingMachineProxy();
 
     public AirConditionProxy getAirConditionProxy() {
         return airConditionProxy;
@@ -38,12 +39,12 @@ public class SmartAppliancesAppFacade implements Observer {
         this.bulbProxy = bulbProxy;
     }
 
-    public CookerProxy getCookerProxy() {
-        return cookerProxy;
+    public CookerInvoker getCookerInvoker() {
+        return cookerInvoker;
     }
 
-    public void setCookerProxy(CookerProxy cookerProxy) {
-        this.cookerProxy = cookerProxy;
+    public void setCookerInvoker(CookerInvoker cookerInvoker) {
+        this.cookerInvoker = cookerInvoker;
     }
 
     public TelevisionProxy getTelevisionProxy() {

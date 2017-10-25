@@ -1,5 +1,6 @@
 package com.finalProject.framework.airCondition.function.impl;
 
+import com.finalProject.applications.OutputsUtil;
 import com.finalProject.framework.airCondition.function.Strategy;
 
 /**
@@ -11,5 +12,7 @@ import com.finalProject.framework.airCondition.function.Strategy;
 public class RefrigerationStrategy implements Strategy {
     @Override
     public void useFunction() {
+        System.out.println(OutputsUtil.getOutput(this,"refrigerationStrategy","useFunction","use refrigerationStrategy"));
+
     }
 }

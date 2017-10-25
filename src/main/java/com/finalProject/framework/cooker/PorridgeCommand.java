@@ -11,6 +11,8 @@ public class PorridgeCommand extends Command {
     }
     @Override
     public void executeCommand() {
+
         super.getCooker().cookPorridge();
+        super.getCooker().notifys();
     }
 }

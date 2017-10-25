@@ -1,5 +1,6 @@
 package com.finalProject.framework.washingMachine.impl;
 
+import com.finalProject.applications.OutputsUtil;
 import com.finalProject.framework.washingMachine.State;
 import com.finalProject.framework.washingMachine.WashingMachine;
 
@@ -11,6 +12,8 @@ import com.finalProject.framework.washingMachine.WashingMachine;
 public class WaterState implements State {
     @Override
     public void handle(WashingMachine washingMachine) {
+        System.out.println(OutputsUtil.getOutput(washingMachine,"washingMachine","washing","state:Water"));
+
         washingMachine.setState(new RinseState());
     }
 }

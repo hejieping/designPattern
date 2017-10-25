@@ -11,6 +11,8 @@ public class SoupCommand extends Command {
     }
     @Override
     public void executeCommand() {
+
         super.getCooker().cookSoup();
+        super.getCooker().notifys();
     }
 }

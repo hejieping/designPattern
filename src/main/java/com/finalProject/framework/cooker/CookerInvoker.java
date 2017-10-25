@@ -3,6 +3,8 @@ package com.finalProject.framework.cooker;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.finalProject.applications.OutputsUtil;
+
 /**
  * 电饭煲命令接受者，当接受到一定命令，通知电饭煲执行命令
  * @author <a href="mailto:jieping.hjp@cainiao.com">jieping.hjp</a>
@@ -27,6 +29,8 @@ public class CookerInvoker {
      * 通知电饭煲执行命令
      */
     public void notifyCooker(){
+        System.out.println(OutputsUtil.getOutput(this,"cookerInvoker","notifyCooker","notify cooker"));
+
         for(Command command : commandList){
             command.executeCommand();
         }

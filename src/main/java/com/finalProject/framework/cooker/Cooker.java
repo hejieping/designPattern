@@ -3,6 +3,7 @@ package com.finalProject.framework.cooker;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.finalProject.applications.OutputsUtil;
 import com.finalProject.framework.HouseholdAppliancesTemplate;
 
 /**
@@ -44,15 +45,21 @@ public class Cooker extends HouseholdAppliancesTemplate implements Publisher{
     /**
      * 煮粥
      */
-    public void cookPorridge(){}
+    public void cookPorridge(){
+        System.out.println(OutputsUtil.getOutput(this,"cooker","cookPorridge","cookPorridge"));
+    }
 
     /**
      * 煮饭
      */
-    public void cookRice(){}
+    public void cookRice(){
+        System.out.println(OutputsUtil.getOutput(this,"cooker","cookRice","cookRice"));
+    }
 
     /**
      * 煮汤
      */
-    public void cookSoup(){}
+    public void cookSoup(){
+        System.out.println(OutputsUtil.getOutput(this,"cooker","cookSoup","cookSoup"));
+    }
 }

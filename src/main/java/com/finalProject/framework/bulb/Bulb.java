@@ -1,6 +1,8 @@
 package com.finalProject.framework.bulb;
 
+import com.finalProject.applications.OutputsUtil;
 import com.finalProject.framework.HouseholdAppliancesTemplate;
+import org.springframework.beans.BeanUtils;
 
 /**
  * 电灯
@@ -18,13 +20,19 @@ public class Bulb  extends HouseholdAppliancesTemplate implements Cloneable{
     private String power;
     @Override
     public Bulb clone() {
-
+        System.out.println(OutputsUtil.getOutput(this,location+this.getClass().getSimpleName(),"clone","bulb clone"));
         Bulb bulb = new Bulb();
-        bulb.setLocation(location);
-        bulb.setPower(power);
+        BeanUtils.copyProperties(this,bulb);
         return bulb;
     }
-
+    @Override
+    public void on(){
+        System.out.println(OutputsUtil.getOutput(this,location+this.getClass().getSimpleName(),"on","turn on bulb"));
+    }
+    @Override
+    public void off(){
+        System.out.println(OutputsUtil.getOutput(this,location+this.getClass().getSimpleName(),"off","turn off bulb"));
+    }
     public String getPower() {
         return power;
     }

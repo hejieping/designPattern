@@ -1,5 +1,6 @@
 package com.finalProject.framework.television.decorator.impl;
 
+import com.finalProject.applications.OutputsUtil;
 import com.finalProject.framework.television.decorator.Decorator;
 
 /**
@@ -12,6 +13,6 @@ public class ChildModeDecorator extends Decorator {
     @Override
     public void features(){
         super.features();
-        System.out.print(feature + " ");
+        System.out.println(OutputsUtil.getOutput(this,"childModeDecorator","television feature","game feature"));
     }
 }

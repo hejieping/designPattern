@@ -6,6 +6,8 @@ package com.finalProject.framework;
  * @since 2017/10/18 下午7:34
  */
 public abstract class HouseholdAppliancesTemplate {
-    public void on(){}
+    public void on(){
+
+    }
     public void off(){}
 }

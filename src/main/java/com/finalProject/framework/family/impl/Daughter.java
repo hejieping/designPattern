@@ -11,10 +11,11 @@ import com.finalProject.framework.telephone.Telephone;
 public class Daughter implements Person{
     private Telephone telephone;
 
+    @Override
     public Telephone getTelephone() {
         return telephone;
     }
-
+    @Override
     public void setTelephone(Telephone telephone) {
         this.telephone = telephone;
     }

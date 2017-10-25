@@ -6,5 +6,5 @@ package com.finalProject.framework.cooker;
  * @since 2017/10/18 下午8:52
  */
 public interface Observer {
-    public void getNotify();
+     void getNotify();
 }
